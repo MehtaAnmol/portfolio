@@ -28,3 +28,35 @@
 .contact{
     padding: 0.8rem 2rem;
 }
+/*--------------header complete----------------*/
+
+.home-main{
+    border: solid red;
+    padding: 10rem 1rem ;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.socials{
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: .3rem;
+    width: max-content;
+    position: fixed;
+    top: 50px;
+    margin: 15rem 0rem;
+}
+.socials > div {
+    padding: .5rem;
+    width: max-content;
+}
+.socials > div >img{
+    width: 2rem;
+}
+.home-main-content{
+    padding: 1rem 2rem;
+}
+.home-main-content > h1 {
+    padding: .3rem;
+    margin: 0.5rem;
+}
