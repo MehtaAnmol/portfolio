@@ -65,42 +65,47 @@
 /*------------------------------------------*/
 
 
-.projects-section > h1{
+.projects-section{
+    border: dotted black;
     margin-top: 2rem;
     padding: 2rem 2rem;
     text-align: center;
+    min-width: fit-content;
 }
 .project-list{
     border: solid black;
     display: flex;
     flex-wrap: wrap;
-    overflow:auto;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: center;
+    min-width: fit-content;
 }
 
 .project-list-item{
-        max-width: calc(50% - 10px); 
+        border: solid yellow 4px;
+        max-width: calc(50% - 10px);
+        min-width:fit-content ;
         padding:  1rem;
-        box-sizing: border-box;
-        margin-bottom: 2rem;
-        
+        margin: 2rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-wrap: wrap;
 }
-.project3,
-.project2,
+/*.project2,
 .project1{
-    border: solid red 1px;
     border-radius: 2rem;
     display: flex;
     flex-wrap: wrap;
     overflow: none;
     padding: 1rem 2rem;
-    gap: 1rem;
-    width: fit-content;
-    min-width: min-content;
+}*/
+.pli-img{
+    border: solid red;
+    width: 15rem;
+    flex-shrink: 0;
+    
 }
 .pli-img > img{
-    width: 15rem;
+    max-width: 100%;
 }
 .p-info{
     border: solid black;
@@ -110,6 +115,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
+    flex-shrink: 0;
 }
 .p-info-btn{
     padding: .5rem;
@@ -117,7 +123,11 @@
     margin-left: 3rem;
     margin-top: 2rem;
 }
+
+
 /*----------------------------------------------------*/
+
+
 .skills-heading{
     border: dotted  black;
     text-align: center;
@@ -125,19 +135,26 @@
     margin-bottom: 2rem;
 }
 .skills-section{
-    border: solid 1px;
+    border: solid blue 4px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .skill-list{
-    border: solid red;
+    border: solid black;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    max-width: fit;
+    gap: 3rem;
 }
 .sl-item{
     border: solid green;
-    width: 6rem;
-    height: 6rem;
+    min-width: fit-content;
+    text-align: center;
 }
 .sl-item > img{
     width: 6rem;
